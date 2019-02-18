@@ -19,7 +19,7 @@ Extrair arquivos, mover pasta **almoxarifado** para a pasta do **QT**, ao exe
 
 **Local da pasta db**
 
-![](imgs/instalacao_3.png)
+![](Projeto - Almoxarifado/gestao_colab.png)
 
 A Figura abaixo mostra a tela inicial da aplicação.
 
