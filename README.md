@@ -66,7 +66,7 @@ O usuário de acesso **A** além das demais funções liberadas possui também
 
 **Adicionando um novo colaborador**
 
-![](imgs/adição_novo_colab.png)
+![](Projeto - Almoxarifado/adição_novo_colab.png)
 
 **Alterando um colaborador existente**
 
