@@ -19,15 +19,15 @@ Extrair arquivos, mover pasta **almoxarifado** para a pasta do **QT**, ao exe
 
 **Local da pasta db**
 
-![](Projeto - Almoxarifado/gestao_colab.png)
+
 
 A Figura abaixo mostra a tela inicial da aplicação.
 
-![](imgs/tela_inicial.png)
+
 
 Tela de Login.
 
-![](imgs/tela_login.png)
+
 
 
 ## Login
@@ -41,40 +41,40 @@ O usuário deve efetuar o login na tela inicial que irá aparecer logo após  a
 Após ser efetuado o login será informado ao usuário qual seu nível de acesso.
 
 
-![](imgs/nivel_acesso.png)
+
 
 OBS: Caso o usuário tente acessar alguma opção na qual o seu acesso não permite será informado uma mensagem **Acesso não Permitido!**
 
 ## Nível de Acesso C
 Caso o usuário possua nível de acesso **C**, poderá ir apenas para Lista de Itens clicando no botão **Ver Itens**, onde verá todas as informações do item, desde seu nome até data/hora de entrada e clicando nas abas é possível ordenar os itens!
 
-![](imgs/lista_itens.png)
+
 
 ## Nível de Acesso B
 Caso o usuário possua nível de acesso **B**, além da visualização dos itens ele poderá abrir a aba **estoque**, desta forma inserir um novo item ou alterar a sua quantidade na aba **gestão produtos**.
 
 
-![](imgs/opcoes_estoque.png)
+
 
 ## Nível de Acesso A
 
 O usuário de acesso **A** além das demais funções liberadas possui também a possibilidade de alterar qualquer característica do item, adicionar/remover um colaborador ou alterar o nível de acesso do colaborador.
 
 
-![](imgs/gerenciar_itens.png)
+
 
 
 **Adicionando um novo colaborador**
 
-![](Projeto - Almoxarifado/adição_novo_colab.png)
+
 
 **Alterando um colaborador existente**
 
-![](imgs/gestao_colab.png)
+
 
 Caso algum usuário sem a permissão para tal função tente executa-la será exibida a informação **acesso não permitido**.
 
-![](imgs/acesso_npermitido.png)
+
 
 ### Informações
 
@@ -84,25 +84,25 @@ A comunição do QT com o SQLite  é feita através da função *prepare*, utili
 
 Utilizado para inserir todos os dados na tabela.
 
-![](imgs/query_insert.png)
+
 
 **Parâmetro Update**
 
 Utilizado para atualizar a tabela sempre que ocorrer alguma alteração.
 
-![](imgs/query_update.png)
+
 
 **Parâmetro delete**
 
 Utilizado para excluir um item da tabela inserida no SQLite.
 
-![](imgs/query_delete.png)
+
 
 **Parâmetro Select**
 
 Utilizado para carregar os dados do SQL para o QT.
 
-![](imgs/query_select.png)
+
 
 **Interface Web**
 
