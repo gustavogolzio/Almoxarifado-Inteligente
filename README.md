@@ -4,10 +4,7 @@
 
 
 ## Visão Geral 
-COM O CRESCIMENTO DE GRANDES EMPRESAS NO MERCADO DE TRABALHO E ECONÓMICO, PENSAMOS EM UM
-PROJETO QUE REMETESSE AOS DIAS ATUAIS, COMO A IMPLEMENTAÇÃO DE UM ALMOXARIFADO INTELIGENTE. QUE O
-USUÁRIO POSSA TER TOTAL CONTROLE DE TUDO QUE ESTIVESSE ENTRANDO E SAINDO NO SEU ESTOQUE, COMO DEMAIS
-UTILIZAÇÕES, POR MEIO DE INTERFACES LÓGICAS E USUAIS.
+Com o crescimento de grandes empresas no mercado de trabalho e económico, pensamos em um projeto que remetesse aos dias atuais, como a implementação de um almoxarifado inteligente. Que o usuário possa ter total controle de tudo que estivesse entrando e saindo no seu estoque, como demais utilizações, por meio de interfaces lógicas e usuais.
 
 ## Introdução
 A aplicação deve permitir que o usuário insira vários Colaboradores de diferentes níveis de acesso, podendo ir desde apenas visualização dos itens presentes no almoxarifado até a adição de novos itens, remoção de itens ou até mesmo cadastro de novos colaboradores.
