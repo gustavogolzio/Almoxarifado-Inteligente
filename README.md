@@ -167,7 +167,7 @@ O código em css:
 **Resistor 100 ohms** - utilizado em ambiente de testes e reparo de circuitos eletrônicos em geral.
 
 
-### Com isso você consegue entender todoo funcionamento do almoxarifado inteligente, dado que, é um ótimo sistema para conseguir organizar o ambiente mais rapidamente. ###
+### Com isso você consegue entender todo o funcionamento do almoxarifado inteligente, dado que, é um ótimo sistema para conseguir organizar o ambiente mais rapidamente. ###
 
 ## A você que utiliza o Almoxarifado Inteligente, somos eternamente gratos por contribuir com melhorias em sua empresa. Muito obrigado! ##
 
