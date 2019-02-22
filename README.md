@@ -131,7 +131,7 @@ Utilizado para excluir um item da tabela inserida no SQLite.
 Utilizado para carregar os dados do SQL para o QT.
 
 
-**Interface Web**
+## Interface Web ##
 
 A fim de melhorar o sitema do almoxarifado, foi construído um website que é possível visualizar boa parte das funções que o aplicativo possui. Como podemos observar na figura, todos as informações já foram vistas, uma vez que, o app e o site podem ser visualizados simultaneamente. 
 
@@ -150,11 +150,11 @@ O código em css:
 [Imagem Do Código css]
 
 
-**Esquematico do Circuito**
+## Esquematico do Circuito ##
 
 
 
-**Materiais Utilizados**
+## Materiais Utilizados ##
 
 **NodeMcu ESP8266** - O módulo Wifi ESP8266 NodeMCU é uma placa de desenvolvimento que combina o chip ESP8266, uma interface usb-serial e um regulador de tensão 3.3V. A programação pode ser feita usando LUA ou a IDE do Arduino. 
 
@@ -167,7 +167,8 @@ O código em css:
 **Resistor 100 ohms** - utilizado em ambiente de testes e reparo de circuitos eletrônicos em geral.
 
 
+**Com isso você consegue entender todoo funcionamento do almoxarifado inteligente, dado que, é um ótimo sistema para conseguir organizar o ambiente mais rapidamente.**
 
-**Obrigado por utilizar o Almoxarifado Inteligente!**
+### A você que utiliza o Almoxarifado Inteligente, somos eternamente gratos por contribuir com melhorias em sua empresa. Muito obrigado!###
 
 
