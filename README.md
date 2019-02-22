@@ -26,7 +26,7 @@ Extrair arquivos, mover pasta **almoxarifado** para a pasta do **QT**, ao exe
 Para melhor entendermos o aplicativo, a figura abaixo mostrará a tela padrão do app:
 
 
-[Tela de inicial]
+![Tela Inicial do aplicativo](Projeto - Almoxarifado/inicio.png)
 
 Na tela inicial podemos observar várias informações, tais como a presença, a temperatura, a fechadura eletrônica e a luz, todos contidos almoxarifado. Além disso, visualizamos o botão de entrar e de ver itens. Entretanto, como mais importante, temos a porta USB que iremos conectar nossa ESP8266 e sua velocidade de processamento, visto que, sem essa conexão não irá ter o funcionamento completo do software.
 
@@ -34,7 +34,7 @@ Na tela inicial podemos observar várias informações, tais como a presença, a
 
 Com o intuito de enviar e receber dados, é necessário a conexão com a placa LoLin(ESP8266), para isso basta selecionarmos qual é a porta USB ela está conectada e, também, determinar sua velocidade de processamento a partir de como foi feito seu código. FEito isso, basta apenas aperta o botão conectar.
 
-[Imagem porta e velocidade]
+![Porta e velocidade](Projeto - Almoxarifado/portausb.png)
 
 Quando a placa conseguir conectar-se com o app, será visualizado "Status: Conectado", informando que a placa está conectada. Para desconectar bastar clicar no botão de desconectar.
 
