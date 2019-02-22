@@ -133,7 +133,7 @@ Utilizado para carregar os dados do SQL para o QT.
 
 ## Interface Web ##
 
-A fim de melhorar o sitema do almoxarifado, foi construído um website que é possível visualizar boa parte das funções que o aplicativo possui. Como podemos observar na figura, todos as informações já foram vistas, uma vez que, o app e o site podem ser visualizados simultaneamente. 
+A fim de melhorar o sitema do almoxarifado, foi construído um website que é possível visualizar boa parte das funções que o aplicativo possui.Para acessá-lo basta digitar esse link http://almoxautomated.herokuapp.com/. Como podemos observar na figura, todos as informações já foram vistas, uma vez que, o app e o site podem ser visualizados simultaneamente. 
 
 [Imagem Tela Inicial WebSite]
 
