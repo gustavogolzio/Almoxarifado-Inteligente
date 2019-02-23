@@ -21,6 +21,12 @@ Extrair arquivos, mover pasta **almoxarifado** para a pasta do **QT**, ao exe
 
 ![db](figuras/db.png)
 
+Para inicializar o app basta ir na pasta **executavel** e depois apenas clicar no **almoxarafidado.exe**.
+
+![exe](figuras/pastaexe.png)
+
+![appexe](figuras/almoexe.png)
+
 ## Tela Inicial do aplicativo ##
 
 Para melhor entendermos o aplicativo, a figura abaixo mostrará a tela padrão do app:
