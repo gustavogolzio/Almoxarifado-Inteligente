@@ -151,11 +151,6 @@ O código em css:
 
 ![code css](figuras/codecss.png)
 
-
-## Esquematico do Circuito ##
-
-
-
 ## Materiais Utilizados ##
 
 **NodeMcu ESP8266** - O módulo Wifi ESP8266 NodeMCU é uma placa de desenvolvimento que combina o chip ESP8266, uma interface usb-serial e um regulador de tensão 3.3V. A programação pode ser feita usando LUA ou a IDE do Arduino. 
