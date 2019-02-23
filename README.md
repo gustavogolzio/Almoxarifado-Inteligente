@@ -113,24 +113,25 @@ A comunição do QT com o SQLite  é feita através da função *prepare*, utili
 
 Utilizado para inserir todos os dados na tabela.
 
-
+![insert](figuras/query_insert.png)
 
 **Parâmetro Update**
 
 Utilizado para atualizar a tabela sempre que ocorrer alguma alteração.
 
-
+![update](figuras/query_update.png)
 
 **Parâmetro delete**
 
 Utilizado para excluir um item da tabela inserida no SQLite.
 
-
+![delete](figuras/query_delete.png)
 
 **Parâmetro Select**
 
 Utilizado para carregar os dados do SQL para o QT.
 
+![](figuras/query_select.png)
 
 ## Interface Web ##
 
@@ -148,7 +149,7 @@ Além do bootstrap foi usado o css, que é um dos mais empregados atualmente par
 
 O código em css:
 
-[Imagem Do Código css]
+![code css](figuras/codecss.png)
 
 
 ## Esquematico do Circuito ##
