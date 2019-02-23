@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login</title>
+        <link rel="shortcut icon" href="static/logo.png" type="image/png">
+       <link  rel="stylesheet" type= "text/css" href= "static/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    </head>
+    <header>
+        <nav class="navbar navbar-dark bg-dark" style="height: 60px;">
+                <div class="logo">
+                    <a href="/">
+                    <img src="static/logo.png" alt="logo1">
+                    </a>
+                </div>
+                <div class="row">
+                        <ul class="main-nav">
+                            <li><a href="/colaboradores" >  COLABORADORES  </a></li>
+                            <li><a href="/estoque">  ESTOQUE  </a></li>
+                            <li class = "active" ><a href="/login" id="user">LOGIN</a></li>
+                        </ul>  				
+                    </div>            
+        </nav>
+    </header>
+    <body class="login-main">
+        <div class="container">
+    
+    <form class="login-box" name="myform">
+        <h1>Login</h1>
+        <div class="textbox">
+            <i class="fas fa-user"></i>
+            <input class="text-place" type="text" placeholder="Usuário" name="un" value="">
+        </div>
+        <div class="textbox">
+            <i class="fas fa-lock"></i>
+            <input class="text-place" type="password" placeholder="Senha" name="pwd" value="">			
+        </div>
+        <div>
+            <a href="">
+                <input class="btn1" type="submit" name="" value="Entrar" onclick= "login()">
+            </a>           
+            
+        </div>
+        <a class="forgetpassword" href="#">
+        <p>Esqueceu a senha?</p>
+        </a>
+    </form>
+    </div>
+	<script type="text/javascript" charset="utf-8">
+		function login() {
+		  var user = document.forms["myform"]["un"].value;
+          var pass = document.forms["myform"]["pwd"].value;
+		  if (user == "gustavo") {
+			
+                if(pass=="123"){
+                    document.getElementById("user").innerHTML = "Gustavo";
+                }else{
+                    alert("Usuário ou senha incorretos");
+                }
+            
+		  } else {
+			alert("Usuário ou senha incorretos");
+		  }
+		}
+	</script>
+    </body>
+</html>
+

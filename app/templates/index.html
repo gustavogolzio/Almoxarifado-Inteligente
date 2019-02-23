@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang = "pt-br"><head>
+		<title>  Almoxarifado Automatizado </title>
+		<meta charset="UTF-8">
+		<meta content = "Almoxarifado Automatizado" name="description">
+		<link rel="shortcut icon" href="static/logo.png" type="image/png">
+		<link  rel="stylesheet" type= "text/css" href= "static/style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<metaname="viewport"content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/solid.css" integrity="sha384-r/k8YTFqmlOaqRkZuSiE9trsrDXkh07mRaoGBMoDcmA58OHILZPsk29i2BsFng1B" crossorigin="anonymous">
+	</head>
+	<body>
+		<header style="background-image: url(static/bckg2.jpg);    height: 100vh;    background-size: cover;    background-position: center;">
+			<nav class="navbar navbar-dark bg-dark" style="height: 60px;">
+				<div class="logo">
+					<a href="/">
+					<img src="static/logo.png" alt="logo1">
+					</a>
+				</div>
+
+				<div class="row">
+
+					<ul class="main-nav">
+						<li><a href="/colaboradores" >  COLABORADORES  </a></li>
+						<li><a href="/estoque">  ESTOQUE  </a></li>
+						<li class = "active"><a href="/login" id="user"> LOGIN  </a></li>
+					</ul>  				
+				</div>
+			</nav>		
+
+			<div class="container pt-5">
+				<div class= "card-group">
+					<div class="col-sm-4">
+						<div class="card-text-center">
+							<div class="card-header">Temperatura</div>
+								<div class="card-body">
+									
+									<h4 class="card-text" id="temp">30°C</h4>
+								</div>									
+						</div>				
+					</div>
+
+					<div class = "col-sm-4">
+						<div class="card-text-center">
+							<div class="card-header">Presença</div>
+								<div class="card-body">
+									<h4 class="card-text" id="presence"></h4>
+									<p class="card-text"><small style="color: black; font-family="Roboto", sans-serif;"class="text-muted">Ultima atualização há 5 min atrás</small></p>
+								</div>
+						</div>
+					</div>
+
+					<div class = "col-sm-4">
+						<div class="card-text-center">			
+							<div class="card-header">Luz</div>
+								<div class="card-body">
+									
+									<h4 class="card-text" id="light_status">Status</h4>
+									<input type="button" class="btn-luz" name="" value="Ligar"  onclick="ligarLuz()" >
+									<input type="button" class="btn-luz" name="" value="Desligar"  onclick="desligarLuz()" >
+								</div>						
+						</div>									
+					</div>
+				</div>
+				<div class="fechadura-main">
+					<div class="fechadurabox">
+						<h1>Fechadura Eletrônica</h1>
+						<h3 id="fechadura_status"><i id="lock" class= "fas fa-lock" ></i>Travado</h3>
+						<div>
+							<input type="button" class="btn-fechadura" name="" value="Destravar Fechadura"  onclick="fechaduraDestravar()" >
+						</div>					
+					</div>
+				</div>
+			</div>
+				
+		</header>
+		<script rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+		<script type="text/javascript" charset="utf-8">
+        
+        	 /* global io */
+        	 
+            //var socket = io.connect('http://' + document.domain + ':' + location.port);
+           
+            function fechaduraDestravar(){
+	                console.log("destravar");
+	                socket.emit('fechadura_destravar');
+	        }
+	        
+	        function ligarLuz(){
+	                console.log("ligar luz");
+	                socket.emit('ligar_luz');
+	        }
+	        
+	        function desligarLuz(){
+	                console.log("desligar luz");
+	                socket.emit('desligar_luz');
+	        }
+            
+            var socket = io.connect('http://almoxautomated.herokuapp.com');
+            
+        	
+        	
+            socket.on("atualiza",function(dados) {
+            	console.log("Funcionou");
+                console.log(dados);
+                
+                if("TEMP" in dados){
+					document.getElementById("temp").innerHTML = dados["TEMP"];
+                	console.log("Temperatura enviada");
+                }
+					
+					
+				if("PIR" in dados){
+					console.log("Presença enviada");
+            		if(dados["PIR"] == 1){
+                        document.getElementById("presence").innerHTML = "Detectado";
+						
+                    }
+					else{
+						document.getElementById("presence").innerHTML = "Ausente";
+					}
+				}	
+               	if("LED01" in dados){
+               		console.log("Entrou no LED1");
+                    if(dados["LED01"] == 1){
+                    	console.log("Liberou");
+                        document.getElementById("fechadura_status").innerHTML = "Liberado";
+					
+						
+						
+                    }
+					else{
+						console.log("trancou");
+						document.getElementById("fechadura_status").innerHTML = "Travado";
+						
+						
+					}
+               	}
+               	
+               	if("LED02" in dados){
+               		console.log("Entrou no LED2");
+                    if(dados["LED02"] == 1){
+                    	console.log("Ligou");
+                        document.getElementById("light_status").innerHTML = "Ligado";
+						
+                    }
+					else{
+						console.log("Desligou");
+						document.getElementById("light_status").innerHTML = "Desligado";
+						
+						
+					}
+               	}
+		    });
+            
+            
+		</script>
+	</body>
+</html>
