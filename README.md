@@ -19,7 +19,7 @@ Extrair arquivos, mover pasta **almoxarifado** para a pasta do **QT**, ao exe
 
 **Local da pasta db**
 
-![db](figuras/sb.png)
+![db](figuras/db.png)
 
 ## Tela Inicial do aplicativo ##
 
